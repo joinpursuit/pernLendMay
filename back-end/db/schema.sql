@@ -5,6 +5,6 @@ CREATE TABLE test (
      name TEXT not null,
      osis TEXT not null,
         description TEXT not null,
-       number TEXT not null,
-        year INT not null,
+       number INT NOT null,
+         date TEXT
 );
