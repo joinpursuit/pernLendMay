@@ -1,14 +1,24 @@
 const db = require("../db/dbConfig");
 
-const getAllDatas = async (id) => {
+const getAllDatas = async () => {
   try {
-    const query = "SELECT * FROM test WHERE uid=$1";
-    const allDatas = await db.any(query, id);
-    return { status: true, payload: allDatas };
-  } catch (error) {
-    return { status: false, payload: error };
+    const allDatas = await db.any("SELECT * FROM test");
+    res.json(allDatas);
+  } catch (err) {
+    res.json(err);
   }
 };
+
+// app.get("/test", async (req, res) => {
+//   try {
+//     const allDays = await db.any("SELECT * FROM test");
+//     res.json(allDays);
+//   } catch (err) {
+//     res.json(err);
+//   }
+// });
+
+
 
 // const getData = async (id, uid) => {
 //   try {

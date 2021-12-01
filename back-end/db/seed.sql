@@ -8,7 +8,7 @@
 -- ('Sunday');
 
 
-INSERT INTO test(name,osis,description,number,date)
+INSERT INTO test (name,osis,description,number,date)
 VALUES 
     ('Dodge','Charger','1234567890AUPMNTR',7,'2021-01-12'),
     ('Impala','Charger','1234567890AUPMNTR',7,'2021-01-12');

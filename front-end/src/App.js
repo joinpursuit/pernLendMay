@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import ImpartialHearing from "./Components/ImpartialHearing"
 import { apiURL } from "./util/apiURL.js";
 const API = apiURL();
 
@@ -27,9 +28,36 @@ useEffect(() => {
 
 return (
   <div className="App">
-       
+    <Switch>
+          <Route exact path="/" component={Login} />
+          <>
+            <NavBar />
+            <Switch>
+              <Route exact path="/cars">
+                <CarsIndex />
+              </Route>
+              <Route exact path="/cars/car/new">
+                <CarNew />
+              </Route>
+              <Route exact path="/cars/:id">
+                <CarShow />
+              </Route>
+              <Route path="/cars/:id/edit">
+                <CarEdit />
+              </Route>
+              
+            
+            
+            
+              <Route path="/*">
+                <FourOFour />
+              </Route>
+            </Switch>
+          </>
+        </Switch>
+       {/* <ImpartialHearing/>
 
-      {days}
+      {days} */}
   </div>
 );
 }
