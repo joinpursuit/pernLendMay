@@ -8,9 +8,9 @@ const {
 
 
 datas.get("/", async (req, res) => {
-  const id = req.query.id;
+
   try {
-    const allDatas = await getAllDatas(id);
+    const allDatas = await getAllDatas();
     res.json(allDatas);
   } catch (error) {
     return error;
