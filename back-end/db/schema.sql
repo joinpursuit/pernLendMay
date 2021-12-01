@@ -4,14 +4,11 @@
 --     id SERIAL PRIMARY KEY, 
 --     name TEXT
 -- );
-DROP DATABASE IF EXISTS mileage_db;
-
-CREATE DATABASE mileage_db;
-
-\c mileage_db;
+DROP TABLE IF EXISTS test;
+-- \c mileage_db;
 
 CREATE TABLE
-    cars(
+   test(
         id SERIAL PRIMARY key,
         make TEXT not null,
         model TEXT not null,
@@ -23,8 +20,3 @@ CREATE TABLE
         uid TEXT not null,
         driver TEXT not null
     );
-
-
-
-
-
