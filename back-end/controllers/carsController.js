@@ -1,21 +1,20 @@
 const express = require("express");
-const datas = express.Router();
-const {
-  getAllDatas,
+ const datas = express.Router();
+// const {
+//   getAllDatas,
 
-} = require("../queries/datas");
-
+// } = require("../queries/datas");
 
 
 datas.get("/", async (req, res) => {
-
   try {
-    const allDatas = await getAllDatas();
-    res.json(allDatas);
-  } catch (error) {
-    return error;
+    const allDays = await db.any("SELECT * FROM test");
+    res.json(allDays);
+  } catch (err) {
+    res.json(err);
   }
 });
+
 
 // Datas.get("/:id", async (req, res) => {
 //   const { id } = req.params;
