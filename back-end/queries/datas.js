@@ -1,9 +1,9 @@
 const db = require("../db/dbConfig");
 
-const getAllDatas = async (uid) => {
+const getAllDatas = async (id) => {
   try {
     const query = "SELECT * FROM test WHERE uid=$1";
-    const allDatas = await db.any(query, uid);
+    const allDatas = await db.any(query, id);
     return { status: true, payload: allDatas };
   } catch (error) {
     return { status: false, payload: error };

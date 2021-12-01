@@ -15,7 +15,7 @@ app.use(express.json()); // Parse incoming JSON
 app.use("/datas", carsController);
 
 app.get("/", (req, res) => {
-  res.send("Hello, world!");
+  res.send("Hello, aworld!");
 });
 
 /////////////////////////////////////

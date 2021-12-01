@@ -3,14 +3,14 @@ const datas = express.Router();
 const {
   getAllDatas,
 
-} = require("../queries/cars");
+} = require("../queries/datas");
 
 
 
 datas.get("/", async (req, res) => {
-  const uid = req.query.uid;
+  const id = req.query.id;
   try {
-    const allDatas = await getAllDatas(uid);
+    const allDatas = await getAllDatas(id);
     res.json(allDatas);
   } catch (error) {
     return error;
