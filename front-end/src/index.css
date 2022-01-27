@@ -1,3 +1,15 @@
+html{
+  /* background-color:yellow; */
+  height:100%;
+  width:100%;
+  margin-left: 0;
+  padding-left:0;
+  /* padding-top:5%; */
+}
+
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +17,82 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  /* border: skyblue 2px solid; */
+  height:100%;
+  width:100%;
+  margin-left: 0;
+  padding-right:0;
+  padding-top:1%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    border: rgb(83, 179, 20) 2px solid;
+    
+}
+div#root{
+  /* border:solid rgb(53, 7, 7) 1px; */
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  margin-left: 0;
+  padding: 0;
+}
+#four{
+/* text-align: center; */
+background-color: indigo;
+/* padding-top:15%; */
+/* margin-top:15%; */
+line-height: 0%;
+
+}
+#one{
+/* text-align: center; */
+/* background-color: yellowgreen; */
+margin-top: 0%;
+/* margin-bottom:47%; */
+
+}
+
+#main-first-div{
+  display: flex;
+  background-color: white;
+  height: 14%;
+}
+#linediv{
+  margin-top:  13px;
+  margin-bottom:  3px;
+  margin-left:  21px;
+  border-left: 4px solid rgb(114, 116, 114);
+  height: 68px; 
+}
+#rightdiv{
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border-left: solid 4px #7a7780 ; */
+  /* border: solid 4px orange ; */
+  width: 79%;
+  color:rgb(34, 29, 29);
+  padding-left:  23px;
+
+  
+}
+#leftdiv{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-left: solid 4px grey ;
+  /* border: solid 4px red ; */
+  width: 21%;
+  color:white;
+
+  background-image: url( "../src/Components/logoDS.jpg");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+  
 }

@@ -1,0 +1,89 @@
+.jumbo-div{
+  height: 244px;
+  width: 100%;
+  /* width: 200px;
+  height: 200px; */
+  display: block;
+  position: relative;
+ 
+  
+ 
+}
+ 
+
+.jumbo-div::after {
+  content: "";
+  background-image: url("https://www.aucd.org/images2/photos/AUCD360/2020/handsphoto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+.title-div{
+ font-size: 88px;
+ color: white;
+text-align: center;
+}
+
+
+
+
+
+.cover-div{
+  height: 444px;
+  width: 100%;
+  /* width: 200px;
+  height: 200px; */
+  display: block;
+  position: relative;
+}
+.cover-div::after{
+  content: "";
+  background-color: rgb(12, 19, 236);
+     background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+}
+ 
+
+#spin {
+  color:white;
+}
+#spin:after {
+  content:"";
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  0%{content:"Learn";}
+  10%{content:"Grow";}
+  20%{content:"Thrive";}
+  30%{content:"Play";}
+  40%{content:"Learn";}
+  50%{content:"Grow";}
+ 60%{content:"Thrive";}
+  70%{content:"Play";}
+ 80%{content:"Learn";}
+ 90%{content:"Grow";}
+100%{content:"Thrive";}
+0%{content:"Play";}
+ 
+  
+  
+  
+
+  
+ 
+}

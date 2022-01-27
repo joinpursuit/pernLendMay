@@ -1,0 +1,31 @@
+import React, { useContext, useEffect, useState } from "react";
+ 
+import { UserContext } from "../Providers/UserProvider";
+import { useHistory } from "react-router-dom";
+import { signInWithGoogle,login } from "../Services/Firebase";
+// import "../Components/Style/Login.css";
+// import { AiFillLock } from "react-icons/ai";
+// import TripLogo from "./Images/giflogo.GIF";
+
+const Login = () => {
+ const history = useHistory();
+    useEffect(()=>{}) 
+    const handleSignIn = async ()=>{
+
+    }
+
+  return (
+      <div>
+<h1>Sign In with Google</h1>
+<button onClick={handleSignIn}>
+    <span>{} Continue with Google</span>
+</button>
+      </div>
+  )
+     
+       
+  }    
+        
+ 
+
+export default Login;
