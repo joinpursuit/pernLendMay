@@ -1,3 +1,9 @@
+
+
+-- \c shirts_dev;
+
+
+
 INSERT INTO test (name) VALUES
 ('Monday'),
 ('Tuesday'),
