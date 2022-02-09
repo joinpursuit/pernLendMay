@@ -1,4 +1,12 @@
-DROP TABLE IF EXISTS cars CASCADE;
+DROP TABLE IF EXISTS test;
+
+CREATE TABLE test (
+    id SERIAL PRIMARY KEY, 
+    name TEXT
+);
+
+
+
 -- DROP TABLE IF EXISTS expenses;
 --  DROP DATABASE IF EXISTS mileage_db;
 
@@ -6,19 +14,19 @@ DROP TABLE IF EXISTS cars CASCADE;
 
 -- \c mileage_db;
 
-CREATE TABLE
-    cars(
-        id SERIAL PRIMARY key,
-        make TEXT not null,
-        model TEXT not null,
-        vin TEXT not null,
-        year INT not null,
-        odometer INT not null, 
-        doors INT not null,
-        is_default BOOLEAN NOT NULL,
-        uid TEXT not null,
-        driver TEXT not null
-    );
+-- CREATE TABLE
+--     cars(
+--         id SERIAL PRIMARY key,
+--         make TEXT not null,
+--         model TEXT not null,
+--         vin TEXT not null,
+--         year INT not null,
+--         odometer INT not null, 
+--         doors INT not null,
+--         is_default BOOLEAN NOT NULL,
+--         uid TEXT not null,
+--         driver TEXT not null
+--     );
 
 --  CREATE TABLE
 --     expenses(
