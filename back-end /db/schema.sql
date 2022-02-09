@@ -1,4 +1,6 @@
 DROP TABLE IF EXISTS cars;
+DROP TABLE IF EXISTS expenses;
+DROP TABLE IF EXISTS trips;
 
 
 CREATE TABLE
@@ -15,7 +17,6 @@ CREATE TABLE
         driver TEXT not null
     );
 
-DROP TABLE IF EXISTS expenses;
  CREATE TABLE
     expenses(
         id SERIAL PRIMARY key,
@@ -26,7 +27,8 @@ DROP TABLE IF EXISTS expenses;
         date TEXT 
     );
 
-DROP TABLE IF EXISTS trips;
+
+
 CREATE TABLE
     trips(
         id SERIAL PRIMARY key,
