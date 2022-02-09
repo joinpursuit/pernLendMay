@@ -1,10 +1,10 @@
--- DROP TABLE IF EXISTS cars CASCADE;
+DROP TABLE IF EXISTS cars CASCADE;
 -- DROP TABLE IF EXISTS expenses;
- DROP DATABASE IF EXISTS mileage_db;
+--  DROP DATABASE IF EXISTS mileage_db;
 
-CREATE DATABASE mileage_db;
+-- CREATE DATABASE mileage_db;
 
-\c mileage_db;
+-- \c mileage_db;
 
 CREATE TABLE
     cars(

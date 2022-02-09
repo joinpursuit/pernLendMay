@@ -1,5 +1,5 @@
 
-\c mileage_db;
+
 
 INSERT INTO
     cars(make, model, vin, year, odometer, doors, is_default,uid, driver)
