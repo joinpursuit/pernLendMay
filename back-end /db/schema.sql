@@ -1,5 +1,4 @@
--- DROP TABLE IF EXISTS cars;
-
+DROP TABLE IF EXISTS cars;
 
 CREATE TABLE
     cars(
@@ -15,7 +14,8 @@ CREATE TABLE
         driver TEXT not null
     );
 
--- DROP TABLE IF EXISTS expenses;
+DROP TABLE IF EXISTS expenses;
+
  CREATE TABLE
     expenses(
         id SERIAL PRIMARY key,
@@ -26,18 +26,19 @@ CREATE TABLE
         date TEXT 
     );
 
--- DROP TABLE IF EXISTS trips;
+DROP TABLE IF EXISTS trips;
 
 CREATE TABLE
     trips(
         id SERIAL PRIMARY key,
         car_id INT REFERENCES cars (id) ON DELETE CASCADE,
         business_use BOOLEAN not null,
-        miles TEXT NOT null,
+        miles INT NOT null,
         date TEXT,
         reason TEXT not null,	
         favorite BOOLEAN NOT NULL
     );
+
 
         --  start_odometer INT NOT null,
         -- stop_odometer INT NOT null,
