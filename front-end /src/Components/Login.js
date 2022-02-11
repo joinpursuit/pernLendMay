@@ -15,6 +15,7 @@ import { GrFacebook } from "react-icons/gr";
 import green from "./Images/greenLend.png";
 import dsLogo from "./Images/logods.jpg";
 import flyer from "./Images/flyer.png";
+import skinny from "./Images/skinny.png";
 import whatlend from "./Images/whatlend.png";
 import psg from "./Images/psg.png";
 import squares from "./Images/squares.png";
@@ -162,13 +163,14 @@ const Login = () => {
           />
         </div>
 
+       
+        <div className="icon-div">
         <div className="social-icons">
           <FcKey />
           <SiTwitter />
           <FaInstagramSquare />
           <GrFacebook />
         </div>
-        <div className="icon-login">
           <button className="sign-in" onClick={handleDisplayLogin}>
             <AiFillLock />
             Advocate <br></br>Sign In
@@ -193,19 +195,20 @@ const Login = () => {
         <li>
           <a href="#trainings"> trainings </a>
         </li>
-        <li>
-          <a href="#parent"> parent support </a>
-        </li>
+        
+          {/* <a href="#parent"> parent support </a> */}
+   
        
         <li>
         <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
+  <button class="dropbtn">parent support</button>
   <div class="dropdown-content">
-  <a href="#resources">OPWDD </a>
-  <a href="#">Link 2</a>
+  <a href="#resources">resources</a>
+  <a href="#">calendar</a>
   <a href="#">Link 3</a>
   </div>
 </div>
+
 
           
      
@@ -343,14 +346,21 @@ const Login = () => {
       {/* --------------------------------------- */}
       <div className="login-body">
       <section className="grabber">
-        <div className="left-MJ">
-          {/* <img className="giffy" src={giffy} alt={psg} /> */}
-          <img className="psgz" src="https://cdn.givecloud.co/s/files/1/0000/0613/files/diverse-adults-virtual-meeting-istock-1254704747.jpg" alt={psg} />
-        </div>
-
-        <div className="right">
-          <img className="psg" src={psg} alt={psg} />
-        </div>
+        <div className="grab"><div className="left-MJ">
+         
+         <img className="skinny" src={skinny} alt={skinny} />
+         <div className="moreinfo">
+           
+         <a className="beige" href="#trainings">Find out more about the advocacy training series.</a></div>
+                      
+                 </div>
+         
+                 <div className="right">
+                   <img className="psg" src={psg} alt={psg} />
+                   <img className="psgz" src="https://cdn.givecloud.co/s/files/1/0000/0613/files/diverse-adults-virtual-meeting-istock-1254704747.jpg" alt={psg} />
+                <div className="us">contact us</div>
+                 </div></div>
+        <div className="footer">something</div>
       </section>
  
         <a name="more">
@@ -383,3 +393,25 @@ const Login = () => {
 };
 
 export default Login;
+
+
+ {/* <img className="giffy" src={giffy} alt={psg} /> */}
+               
+
+          {/* <div    style={{
+              height: "547px",
+              width: "215px",
+              marginTop: "140px",
+              marginLeft: "30px",
+            }}
+          
+         >
+  <iframe loading="lazy" style={{
+              height: "547px",
+              width: "415px",
+              marginTop: "140px",
+              marginLeft: "30px",
+            }}
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAE3-METRIc&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div> */}

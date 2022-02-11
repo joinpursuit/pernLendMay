@@ -13,14 +13,13 @@
 
 
 .left-resources{
-width: 499px;
-height: 614px;
+
 border: 2px black solid;
 
 
 }
 .fam{
-    height: 366px;
+    height: 166px;
     width:100%;  
 }
 input{
@@ -33,7 +32,7 @@ input{
 .right-resources{
     width: 344px;
    
-    height: 614px;
+    height: 200px;
     
     }
     /* .nys,.owd{
@@ -79,5 +78,14 @@ margin: 11%;
    }
    .main{
        margin-bottom: 77px;
-       height: 7777px;
+       height: 100px;
    }
+
+
+@media only screen and (max-width: 800px) {
+.main{
+    height: 100px;
+}
+
+
+}
